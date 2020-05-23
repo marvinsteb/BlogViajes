@@ -23,4 +23,8 @@ $(document).ready(function () {
   $("div.logo img").on("mouseenter", function () {
     console.log("has echo hover en el logo");
   });
+
+  $("div.logo img").on("mouseleave", function () {
+    console.log("saliendo del logo");
+  });
 });
