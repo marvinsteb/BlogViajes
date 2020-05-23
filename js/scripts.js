@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  "use strict";
+  ("use strict");
   /*
   $("main article:first").hide();
   /*
@@ -12,7 +12,15 @@ $(document).ready(function () {
   //$(articuloFinal).prependTo("main");
   $(articuloFinal).appendTo("main");
   */
+  // evento click
+  /*
   $("div.logo img").on("click", function () {
     console.log("has echo click en el logo");
+    $(this).remove();
+    });
+    */
+  // mouseenter || hover
+  $("div.logo img").on("mouseenter", function () {
+    console.log("has echo hover en el logo");
   });
 });
