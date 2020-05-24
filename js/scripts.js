@@ -36,6 +36,7 @@ $(document).ready(function () {
   });
   */
   // agregando clases desde jquery
+  /*
   $("div.logo img").addClass("activo");
 
   $(".navegacion").show();
@@ -44,5 +45,18 @@ $(document).ready(function () {
     $(".navegacion nav ul li").removeClass("activo");
     e.preventDefault();
     $(this).addClass("activo");
+  });
+  */
+  $("main").on({
+    click: function () {
+      $(this).addClass("activo");
+    },
+    mouseenter: function () {
+      $(this).addClass("fondorojo");
+    },
+    mouseleave: function () {
+      $(this).removeClass("activo");
+      $(this).removeClass("fondorojo");
+    },
   });
 });
