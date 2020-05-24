@@ -29,7 +29,20 @@ $(document).ready(function () {
     console.log("saliendo del logo");
   });
   */
+  // metodo show()
+  /*
   $("#menu").on("click", function () {
     $("#navegacion").show();
+  });
+  */
+  // agregando clases desde jquery
+  $("div.logo img").addClass("activo");
+
+  $(".navegacion").show();
+  //$(".navegacion nav ul li:first").addClass("activo");
+  $(".navegacion nav ul li").on("click", function (e) {
+    $(".navegacion nav ul li").removeClass("activo");
+    e.preventDefault();
+    $(this).addClass("activo");
   });
 });
