@@ -20,11 +20,16 @@ $(document).ready(function () {
     });
     */
   // mouseenter || hover
+  /*
   $("div.logo img").on("mouseenter", function () {
     console.log("has echo hover en el logo");
   });
 
   $("div.logo img").on("mouseleave", function () {
     console.log("saliendo del logo");
+  });
+  */
+  $("#menu").on("click", function () {
+    $("#navegacion").show();
   });
 });
