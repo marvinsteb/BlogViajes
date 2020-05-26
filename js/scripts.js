@@ -72,7 +72,8 @@ $(document).ready(function () {
   /*
   $("main article:first img").on("click", function () {
     $(this).attr("src", "img/imagen_2.jpg");
-  });*/
+  });
+  
   $("#navegacion").show();
   $(".logo img").css({ width: "600px" });
   $("main article h2").css({ color: "#db008d" });
@@ -84,5 +85,10 @@ $(document).ready(function () {
 
   $(".navegacion ul li a ").on("mouseenter", function () {
     $(".navegacion").css("background-color", "red");
+  });
+  */
+  // animaciones con jquery
+  $(".logo img").on("click", function () {
+    $(this).animate({ width: "200px" }, 1000);
   });
 });
