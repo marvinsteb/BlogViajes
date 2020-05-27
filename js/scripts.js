@@ -88,7 +88,14 @@ $(document).ready(function () {
   });
   */
   // animaciones con jquery
+  /*
   $(".logo img").on("click", function () {
     $(this).animate({ width: "200px" }, 1000);
+  });*/
+  $(".logo img").on("click", function () {
+    $("main article:first").slideUp(1000);
+  });
+  $("aside").on("click", function () {
+    $("main article:first").slideDown(1000);
   });
 });
