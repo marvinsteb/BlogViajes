@@ -92,10 +92,20 @@ $(document).ready(function () {
   $(".logo img").on("click", function () {
     $(this).animate({ width: "200px" }, 1000);
   });*/
+  /*
   $(".logo img").on("click", function () {
     $("main article:first").slideUp(1000);
   });
   $("aside").on("click", function () {
     $("main article:first").slideDown(1000);
+  });*/
+  $("div.logo img").on("click", function () {
+    $.ajax("promocion.txt", {
+      type: "GET",
+      dataType: "text",
+      success: function (data, status, jqxhr) {
+        $("aside").text(data);
+      },
+    });
   });
 });
