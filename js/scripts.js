@@ -99,6 +99,7 @@ $(document).ready(function () {
   $("aside").on("click", function () {
     $("main article:first").slideDown(1000);
   });*/
+  /*
   $("div.logo img").on("click", function () {
     $.ajax("promocion.txt", {
       type: "GET",
@@ -107,5 +108,23 @@ $(document).ready(function () {
         $("aside").text(data);
       },
     });
+  });*/
+  var proximosViajes = ["Londres", "Valencia", "Madrid", "Paris", "Milan"];
+  $.each(proximosViajes, function (i, v) {
+    var aside = $("aside");
+    if (i === 0) {
+      aside.append("<h2> Proximos Viajes </h2>");
+    }
+    aside.append(`<li>${v}</li>`);
+  });
+
+  var viajesPorFecha = {
+    primero: "londres",
+    segundo: "valencia",
+    tercero: "Madrid",
+    cuarto: "paris",
+  };
+  $.each(viajesPorFecha, function (i, v) {
+    $("aside").append(`<li> ${i} - ${v} </li>`);
   });
 });
