@@ -79,6 +79,40 @@ main {
   float: left;
   padding-right: 40px;
 }
+
+div.servicio {
+  margin-top: 30px;
+}
+
+div.servicio nav {
+  background-color: #00b8e4;
+}
+
+div.servicio nav a {
+  padding: 10px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div.nuestros-servicios {
+  position: relative;
+  height: 200px;
+}
+
+div.nuestros-servicios > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: none;
+}
+
+div.servicio nav a:hover {
+  background-color: #db008d;
+}
+
 /** Entradas de post**/
 article {
   margin-top: 30px;
